@@ -28,9 +28,28 @@ def create_installer_package():
         '--distpath=' + os.path.join(installer_dir, 'app'),
 
         # 必要なモジュール
+        '--hidden-import=plyer',
+        '--hidden-import=plyer.platforms.win',
+        '--hidden-import=plyer.platforms.win.notification',
+        '--hidden-import=PIL',
         '--hidden-import=PIL._tkinter',
+        '--hidden-import=PIL._imaging',
         '--hidden-import=tkinter',
         '--hidden-import=tkinter.ttk',
+        '--hidden-import=psutil',
+        '--hidden-import=pystray',
+        '--hidden-import=dotenv',
+        '--hidden-import=python-dotenv',
+
+        # データファイルの追加
+        '--add-data=requirements.txt;.',
+
+        # 追加のインポート
+        '--collect-all=plyer',
+        '--collect-all=pystray',
+        '--collect-all=PIL',
+        '--collect-submodules=plyer',
+        '--collect-submodules=pystray',
     ]
 
     # アイコンファイルが存在する場合は追加
