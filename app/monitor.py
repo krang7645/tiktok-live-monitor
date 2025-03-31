@@ -9,6 +9,12 @@ import pystray
 from PIL import Image
 import threading
 import json
+
+# Add the app directory to the Python path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+if current_dir not in sys.path:
+    sys.path.append(current_dir)
+
 from setup_gui import SetupDialog
 
 class SimpleMonitor:
