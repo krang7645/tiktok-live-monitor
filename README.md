@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TikTok LIVE Studio 認証監視システム
 
 TikTok LIVE Studioの認証画面を監視し、再認証が必要になった際に通知を送信するシステムです。
@@ -48,3 +49,7 @@ nohup python monitor.py &
 - CPU使用率を抑えるため、チェック間隔は適切な値に設定してください
 - LINE通知を使用する場合は、LINE Developersでの設定が必要です
 - テンプレート画像は実際の認証画面と一致している必要があります
+=======
+# tiktok-live-monitor
+TikTok LIVE Studio Monitor - A monitoring tool for TikTok LIVE Studio
+>>>>>>> e3a9ec2e100e8bb5a48d57adf3361738cedde2c0
